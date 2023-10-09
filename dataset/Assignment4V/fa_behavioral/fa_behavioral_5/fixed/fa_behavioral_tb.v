@@ -23,7 +23,7 @@ module fa_behavioral_tb;
   initial begin
          f = $fopen("test.txt", "w");
          $dumpfile("test.vcd");
-         $dumpvars;
+         $dumpvars(1, fa_behavioral_tb);
          $monitor("%g\t %b %b %b %b %b",$time,a,b,ci,s,co);
          #60 $finish;
   end    

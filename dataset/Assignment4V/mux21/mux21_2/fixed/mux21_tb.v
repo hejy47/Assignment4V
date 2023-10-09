@@ -22,7 +22,7 @@ module mux21_tb;
   initial begin
          f = $fopen("test.txt", "w");
          $dumpfile("test.vcd");
-         $dumpvars;
+         $dumpvars(1, mux21_tb);
          $monitor("%1d\t%b\t%b\t%b\t%b",$time,a,b,s,y);
          #60 $finish;
   end    

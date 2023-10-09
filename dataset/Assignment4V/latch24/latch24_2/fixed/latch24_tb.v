@@ -36,7 +36,7 @@ module latch24_tb;
          
     $dumpfile("test.vcd");
             
-    $dumpvars;
+    $dumpvars(1, latch24_tb);
             
     $monitor("%g\t %b %b %b",$time,d,clk,q);    
             

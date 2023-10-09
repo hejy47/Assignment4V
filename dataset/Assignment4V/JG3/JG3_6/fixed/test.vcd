@@ -1,5 +1,5 @@
 $date
-	Tue Jul  4 01:20:44 2023
+	Tue Jul  4 02:15:54 2023
 $end
 $version
 	Icarus Verilog
@@ -14,16 +14,10 @@ $var reg 3 # ABC [2:0] $end
 $var reg 1 $ instrumented_clk $end
 $var integer 32 % f [31:0] $end
 $var integer 32 & i [31:0] $end
-$scope module m $end
-$var wire 3 ' ABC [2:0] $end
-$var reg 1 " X $end
-$var reg 1 ! Y $end
-$upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b0 '
 b111 &
 b10000000000000000000000000000011 %
 0$
@@ -35,38 +29,31 @@ $end
 0!
 b110 &
 b1 #
-b1 '
 1$
 #2
 b101 &
 b10 #
-b10 '
 0$
 #3
 b100 &
 b11 #
-b11 '
 1$
 #4
 b11 &
 b100 #
-b100 '
 0$
 #5
 1"
 b10 &
 b101 #
-b101 '
 1$
 #6
 b1 &
 b110 #
-b110 '
 0$
 #7
 b0 &
 b111 #
-b111 '
 1$
 #8
 0$

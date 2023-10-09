@@ -1,5 +1,5 @@
 $date
-	Tue Jul  4 01:20:43 2023
+	Tue Jul  4 02:15:54 2023
 $end
 $version
 	Icarus Verilog
@@ -15,12 +15,6 @@ $var reg 1 $ instrumented_clk $end
 $var reg 1 % s $end
 $var integer 32 & f [31:0] $end
 $var integer 32 ' i [31:0] $end
-$scope module m $end
-$var wire 1 " a $end
-$var wire 1 # b $end
-$var wire 1 % s $end
-$var reg 1 ! y $end
-$upscope $end
 $upscope $end
 $enddefinitions $end
 #0

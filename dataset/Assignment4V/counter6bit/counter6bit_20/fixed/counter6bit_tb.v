@@ -35,7 +35,7 @@ module counter6bit_tb();
          
   $dumpfile("test.vcd");
          
-  $dumpvars;
+  $dumpvars(1, counter6bit_tb);
          
   $monitor("%g\t %b %b %b %b",$time,ENA,CLR,F_IN,Q);   
          

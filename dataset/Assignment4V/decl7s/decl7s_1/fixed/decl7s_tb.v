@@ -20,7 +20,7 @@ module decl7s_tb;
   decl7s_test m(.a(a),.led7s(led7s)); 
   initial begin
          $dumpfile("test.vcd");
-         $dumpvars;
+         $dumpvars(1, decl7s_tb);
          $monitor("%g\t %b %b",$time,a,led7s);
          #60 $finish;
   end    

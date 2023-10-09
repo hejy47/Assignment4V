@@ -22,7 +22,7 @@ module JG3_tb;
          f = $fopen("test.txt", "w");
          $dumpfile("test.vcd");
          $monitor("%1d\t%b\t%b\t%b",$time,ABC,X,Y);
-         $dumpvars;
+         $dumpvars(1, JG3_tb);
          #60 $finish;
   end    
     always @(instrumented_clk) begin

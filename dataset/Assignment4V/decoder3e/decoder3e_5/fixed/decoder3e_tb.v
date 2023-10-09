@@ -9,7 +9,7 @@ module decoder3e_tb;
   initial  begin
         f = $fopen("test.txt", "w");
         $dumpfile("test.vcd");  
-        $dumpvars;        
+        $dumpvars(1, decoder3e_tb);        
         $monitor("%1d\t%b\t%b\t%b",
                 $time,ena,a,y);
   end
